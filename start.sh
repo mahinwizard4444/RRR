@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/BXBotz2021/Spider-V2.git /Spider-V2
+  git clone https://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@github.com/BXBotz2021/Spider-Man.git /Spider-V2
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Spider-V2
