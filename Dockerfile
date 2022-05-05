@@ -6,7 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /RRR
-WORKDIR /RRR
+RUN mkdir /Spider-V2
+WORKDIR /Spider-V2
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
