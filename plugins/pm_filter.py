@@ -415,10 +415,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer(url=f"https://t.me/TheAutoFilterBot?start={file_id}")
+                await query.answer(url=f"https://t.me/Captain_jac_k_sparrow_bot?start={file_id}")
                 return
             elif P_TTI_SHOW_OFF:
-                await query.answer(url=f"https://t.me/1TheAutoFilterBot?start={file_id}")
+                await query.answer(url=f"https://t.me/Captainjac_k_sparrow_bot?start={file_id}")
                 return
             else:
                 await client.send_cached_media(
@@ -427,7 +427,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     reply_markup=InlineKeyboardMarkup(
            [[
-           InlineKeyboardButton("🔰 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔰", url="https://t.me/BX_Botz")
+           InlineKeyboardButton("🔰 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔰", url="https://t.me/M76Links")
            ]]
         )
                     )
@@ -447,9 +447,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
         except PeerIdInvalid:
-            await query.answer(url=f"https://t.me/TheAutoFilterBot?start={file_id}")
+            await query.answer(url=f"https://t.me/Captain_jac_k_sparrow_bot?start={file_id}")
         except Exception as e:
-            await query.answer(url=f"https://t.me/TheAutoFilterBot?start={file_id}")
+            await query.answer(url=f"https://t.me/Captain_jac_k_sparrow_bot?start={file_id}")
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -478,7 +478,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption=f_caption,
                 reply_markup=InlineKeyboardMarkup(
        [[
-       InlineKeyboardButton("🔰 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔰", url="https://t.me/BX_Botz")
+       InlineKeyboardButton("🔰 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ 🔰", url="https://t.me/M76Links")
        ]]
     )
                 )
@@ -500,10 +500,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/TheAutoFilterBot?startgroup=true')
+            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/Captain_jac_k_sparrow_bot?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs', url='https://t.me/BX_Botz')
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇs', url='https://t.me/M76Links')
             ],[
             InlineKeyboardButton('📚 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ 🔰', callback_data='about')
@@ -536,7 +536,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/BX_Botz'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/M76Links'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
